@@ -5,7 +5,9 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'rails-api'
 gem 'rapgenius'
-gem 'sqlite3'
+group :development do
+	gem 'sqlite3'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
