@@ -17,7 +17,7 @@ class FetcherController < ApplicationController
 			lyrics = lyrics + '-lyrics'
 			puts lyrics
 			song = RapGenius::Song.find(lyrics)
-			render :json => { :lyrics => lyrics }
+			render :json => { :lyrics => song.annotations }
 			#puts song
 			puts song.title
 			puts song.full_artist
