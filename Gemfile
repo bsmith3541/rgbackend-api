@@ -5,6 +5,7 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'rails-api'
 gem 'rapgenius'
+gem 'pg'
 group :development do
 	gem 'sqlite3'
 end
