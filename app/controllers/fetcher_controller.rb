@@ -7,14 +7,14 @@ class FetcherController < ApplicationController
 		lyrics = params["lyrics"]
 		puts '----------LYRICS---------'
 		puts lyrics
-		if(lyrics)
-			if(lyrics[-1] == ' ')
-				lyrics = lyrics.chop
-				puts lyrics
-			end
+		if(lyrics && lyrics.length > 0)
+			# if(lyrics[-1] == ' ')
+			# 	lyrics = lyrics.chop
+			# 	puts lyrics
+			# end
 
 			lyrics = lyrics.gsub(' ', '-')
-			lyrics = lyrics += '-lyrics'
+			lyrics = lyrics + '-lyrics'
 			puts lyrics
 			song = RapGenius::Song.find(lyrics)
 			render :json => { :lyrics => lyrics }

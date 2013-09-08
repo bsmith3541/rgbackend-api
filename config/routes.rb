@@ -6,7 +6,8 @@ RgbackendApi::Application.routes.draw do
   # root to: 'welcome#index'
   root to: 'fetcher#getlyrics'
   get 'getlyrics' => 'fetcher#getlyrics'
-  # Example of regular route:
+  post 'getlyrics' => 'fetcher#getlyrics'
+   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
