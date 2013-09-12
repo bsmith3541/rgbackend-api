@@ -22,17 +22,18 @@ class FetcherController < ApplicationController
 			puts song.title
 			puts song.full_artist
 			#puts song.description
-			for annotation in song.annotations
-				puts '-----------------'
-				puts annotation.id
-				puts '-----------------'			
-				puts annotation.lyric
-				if (annotation.id.length > 0)
-					puts '---------------'
-					puts annotation.explanation
-				end
-				puts ""
-			end
+			
+			# for annotation in song.annotations
+			# 	puts '-----------------'
+			# 	puts annotation.id
+			# 	puts '-----------------'			
+			# 	puts annotation.lyric
+			# 	if (annotation.id.length > 0)
+			# 		puts '---------------'
+			# 		puts annotation.explanation
+			# 	end
+			# 	puts ""
+			# end
 		end
 	end
 end
